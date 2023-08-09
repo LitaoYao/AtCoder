@@ -27,6 +27,8 @@ void solve()
 		long long ans = 0;
 		for (int i = n - 1; i > 0; --i)
 		{
+			// To erase each s[i], we must cost (s[i] - '0' - 1) * (ans + 1) + 1 times.
+			// Here (s[i] - '0' - 1) * (ans + 1) is the count of '1' duplicated by s[i].
 			ans = (ans + (s[i] - '0' - 1) * (ans + 1) + 1) % MOD;
 		}
 		cout << ans << endl;
