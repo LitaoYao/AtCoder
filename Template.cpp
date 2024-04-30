@@ -1,5 +1,9 @@
 #include <iostream>
 using namespace std;
+void init()
+{
+	return;
+}
 void solve()
 {
 	return;
@@ -13,6 +17,7 @@ void fastRead()
 int main()
 {
 	fastRead();
+	init();
 	int t;
 	cin >> t;
 	while (t--)
